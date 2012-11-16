@@ -33,5 +33,14 @@ namespace Andora.BlogSamples
         {
             InitializeComponent();
         }
+
+        private DateTime _lowerValue = DateTime.Parse("02/01/2011 8:00 AM");
+        private DateTime _upperValue = DateTime.Parse("10/31/2011 8:30 PM");
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            dateRangeSlider1.UpperValue = _upperValue;
+            dateRangeSlider1.LowerValue = _lowerValue;
+        }
+
     }
 }
