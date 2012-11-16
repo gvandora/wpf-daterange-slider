@@ -1,11 +1,23 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateRangeSlider", "DateRangeSlider\DateRangeSlider.csproj", "{4EF07113-9599-418F-8754-53CE8BACF7F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlLibrary", "UserControlLibrary\UserControlLibrary.csproj", "{4B91CA32-97D6-4220-8913-AE67A0AB52CD}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs23
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DateRangeSlider\\DateRangeSlider.csproj
+		SccProjectName1 = DateRangeSlider
+		SccLocalPath1 = DateRangeSlider
+		SccProjectUniqueName2 = UserControlLibrary\\UserControlLibrary.csproj
+		SccProjectName2 = UserControlLibrary
+		SccLocalPath2 = UserControlLibrary
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms

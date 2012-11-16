@@ -4,7 +4,7 @@
         Title="MainWindow" Height="350" Width="525" 
         xmlns:userControls="clr-namespace:Andora.UserControlLibrary;assembly=Andora.UserControlLibrary"
         xmlns:converters="clr-namespace:Andora.BlogSamples.Converters">
-<!--
+    <!--
     /*
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
  * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
@@ -27,7 +27,7 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
+
         <userControls:DateRangeSlider x:Name="dateRangeSlider1" 
                             LowerValue="02/01/2011 8:00 AM"
                             UpperValue="10/31/2011 8:30 PM"
@@ -53,9 +53,11 @@
                     VerticalAlignment="Top"
                     HorizontalAlignment="Right">
             <TextBlock Text="{Binding ElementName=dateRangeSlider1, Path=UpperValue, Mode=OneWay}" Height="23"  Margin="10"/>
-            
+
             <CheckBox x:Name="chkDisableUpperSlider" Content="Diable Upper Slider" HorizontalAlignment="Left" />
             <CheckBox x:Name="chkLockUpperSliderToMax" Content="Lock Upper Slider to Max" HorizontalAlignment="Left" />
+
+            <Button Content="Reset" Click="Button_Click_1" Margin="15" />
         </StackPanel>
     </Grid>
 </Window>

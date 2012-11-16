@@ -140,7 +140,13 @@ namespace Andora.UserControlLibrary
         }
 
         public static readonly DependencyProperty LowerValueProperty =
-            DependencyProperty.Register("LowerValue", typeof(DateTime), typeof(DateRangeSlider), new UIPropertyMetadata(DateTime.Now.AddDays(-7)));
+            DependencyProperty.Register("LowerValue", typeof(DateTime), typeof(DateRangeSlider), new UIPropertyMetadata(DateTime.Now.AddDays(7), new PropertyChangedCallback(OnLowerValueChanged)));
+
+        public static void OnLowerValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            DateRangeSlider slider = (DateRangeSlider)d;
+            slider.LowerSlider.Value = ((DateTime)e.NewValue).Ticks;
+        }
         #endregion
 
         #region Dependency Property - Upper Value
@@ -155,7 +161,8 @@ namespace Andora.UserControlLibrary
 
         public static void OnUpperValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-
+            DateRangeSlider slider = (DateRangeSlider)d;
+            slider.UpperSlider.Value = ((DateTime)e.NewValue).Ticks;
         }
         #endregion
 
